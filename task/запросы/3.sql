@@ -1,0 +1,2 @@
+COPY (select name, type1, hp, attack, defense from 'pokemon.csv' where attack > 50;;) TO '4.csv' WITH (HEADER 1, DELIMITER ',');
+COPY (select name, type1, hp, attack, defense from 'pokemon.csv' where attack > 50;;) TO '4.json';
